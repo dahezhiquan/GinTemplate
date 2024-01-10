@@ -18,6 +18,5 @@ type RouterBlog struct {
 func (*RouterBlog) Route(r *gin.Engine) {
 	h := service.NewHandlerBlog()
 	g := r.Group("")
-	g.GET("/blog/index", h.BlogList)
 	g.GET("/blog/detail/:blog_hash", h.BlogDetail)
 }
