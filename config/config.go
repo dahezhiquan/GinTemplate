@@ -18,7 +18,6 @@ type Config struct {
 	EtcdConfig   *EtcdConfig
 	MysqlConfig  *MysqlConfig
 	JwtConfig    *JwtConfig
-	LimitConfig  *LimitConfig
 }
 
 type ServerConfig struct {
@@ -54,11 +53,6 @@ type JwtConfig struct {
 	RefreshSecret string
 }
 
-type LimitConfig struct {
-	UrlQPS int
-	IpQPS  int
-}
-
 func InitConfig() *Config {
 	conf := &Config{viper: viper.New()}
 	conf.viper.SetConfigName("config")
@@ -73,7 +67,6 @@ func InitConfig() *Config {
 	conf.InitZapLog()
 	conf.InitMysqlConfig()
 	conf.InitJwtConfig()
-	conf.InitLimitConfig()
 
 	return conf
 }
@@ -130,14 +123,6 @@ func (c *Config) InitJwtConfig() {
 		RefreshSecret: c.viper.GetString("jwt.refreshSecret"),
 	}
 	c.JwtConfig = jc
-}
-
-func (c *Config) InitLimitConfig() {
-	lc := &LimitConfig{
-		UrlQPS: c.viper.GetInt("limit.urlQps"),
-		IpQPS:  c.viper.GetInt("limit.ipQps"),
-	}
-	c.LimitConfig = lc
 }
 
 func getCurrentAbPathByCaller() string {
