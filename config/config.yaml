@@ -1,0 +1,33 @@
+# 设置服务信息
+server:
+  name: "demo-hahaha"
+  addr: "127.0.0.1:8989"
+# 设置MySQL信息
+mysql:
+  username: root
+  password: password
+  host: xxx.xxx.xxx.xxx
+  port: 3306
+  db: demo
+  maxOpenConns: 100
+  maxIdleConns: 20
+# 设置redis信息
+cache:
+  host: "127.0.0.1"
+  port: 6379
+  password: ""
+  db: 0
+# 设置JWT凭据
+jwt:
+  accessExp: 70000
+  refreshExp: 140000
+  accessSecret: xxx
+  refreshSecret: xxx
+zap:
+  # 设置日志文件保存位置
+  debugFileName: ""
+  infoFileName: ""
+  warnFileName: ""
+  maxSize: 500,
+  maxAge: 28,
+  MaxBackups: 3
