@@ -1,9 +1,9 @@
 package copier
 
 import (
+	"GinTemplate/common/errs"
 	"github.com/jinzhu/copier"
 	"go.uber.org/zap"
-	"m-sec/common/errs"
 )
 
 func Copy(toValue interface{}, fromValue interface{}) *errs.BError {

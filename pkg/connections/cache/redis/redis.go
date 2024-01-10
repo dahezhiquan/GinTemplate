@@ -1,9 +1,9 @@
 package redis
 
 import (
+	"GinTemplate/config"
 	"context"
 	"github.com/go-redis/redis/v8"
-	"m-sec/config"
 	"time"
 )
 

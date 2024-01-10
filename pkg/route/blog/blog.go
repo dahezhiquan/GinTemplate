@@ -1,10 +1,10 @@
 package blog
 
 import (
+	"GinTemplate/common"
+	"GinTemplate/pkg/service"
 	"github.com/gin-gonic/gin"
 	"log"
-	"m-sec/common"
-	"m-sec/pkg/service"
 )
 
 func init() {

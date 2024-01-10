@@ -1,9 +1,9 @@
 package repo
 
 import (
+	"GinTemplate/pkg/connections/database"
+	"GinTemplate/pkg/model"
 	"context"
-	"m-sec/pkg/connections/database"
-	"m-sec/pkg/model"
 )
 
 type BlogRepo interface {

@@ -1,12 +1,12 @@
 package gorms
 
 import (
+	"GinTemplate/config"
 	"context"
 	"fmt"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
-	"m-sec/config"
 )
 
 var _db *gorm.DB

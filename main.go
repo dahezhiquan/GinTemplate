@@ -1,12 +1,12 @@
 package main
 
 import (
+	"GinTemplate/common"
+	"GinTemplate/config"
+	_ "GinTemplate/pkg/route"
 	"context"
 	"github.com/gin-gonic/gin"
 	"log"
-	"m-sec/common"
-	"m-sec/config"
-	_ "m-sec/pkg/route"
 	"net/http"
 	"os"
 	"os/signal"

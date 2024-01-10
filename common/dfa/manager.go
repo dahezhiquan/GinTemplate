@@ -1,9 +1,9 @@
 package dfa
 
 import (
+	"GinTemplate/common/dfa/filter"
+	"GinTemplate/common/dfa/store"
 	"fmt"
-	"m-sec/common/dfa/filter"
-	"m-sec/common/dfa/store"
 	"sync"
 )
 

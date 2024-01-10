@@ -1,14 +1,14 @@
 package domain
 
 import (
+	"GinTemplate/common/errs"
+	"GinTemplate/pkg/connections/cache"
+	"GinTemplate/pkg/connections/cache/redis"
+	"GinTemplate/pkg/connections/database"
+	"GinTemplate/pkg/dao"
+	"GinTemplate/pkg/model"
+	"GinTemplate/pkg/repo"
 	"context"
-	"m-sec/common/errs"
-	"m-sec/pkg/connections/cache"
-	"m-sec/pkg/connections/cache/redis"
-	"m-sec/pkg/connections/database"
-	"m-sec/pkg/dao"
-	"m-sec/pkg/model"
-	"m-sec/pkg/repo"
 	"time"
 )
 

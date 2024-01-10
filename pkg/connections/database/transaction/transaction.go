@@ -1,9 +1,9 @@
 package transaction
 
 import (
-	"m-sec/common/errs"
-	"m-sec/pkg/connections/database"
-	"m-sec/pkg/connections/database/gorms"
+	"GinTemplate/common/errs"
+	"GinTemplate/pkg/connections/database"
+	"GinTemplate/pkg/connections/database/gorms"
 )
 
 type Transaction struct {

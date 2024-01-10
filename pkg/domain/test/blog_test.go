@@ -1,8 +1,8 @@
 package test
 
 import (
+	"GinTemplate/pkg/domain"
 	"log"
-	"m-sec/pkg/domain"
 	"testing"
 )
 

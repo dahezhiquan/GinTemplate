@@ -1,30 +1,23 @@
-module m-sec
+module GinTemplate
 
 go 1.20
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/go-playground/validator v9.31.0+incompatible
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/go-sql-driver/mysql v1.7.1
-	github.com/goccy/go-json v0.10.2
 	github.com/golang-jwt/jwt/v4 v4.5.0
-	github.com/google/uuid v1.5.0
 	github.com/imroc/req/v3 v3.42.3
 	github.com/jinzhu/copier v0.4.0
 	github.com/jmoiron/sqlx v1.3.5
 	github.com/jordan-wright/email v4.0.1-0.20210109023952-943e75fe5223+incompatible
-	github.com/mssola/user_agent v0.6.0
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/orcaman/concurrent-map/v2 v2.0.1
 	github.com/spf13/viper v1.18.2
 	go.mongodb.org/mongo-driver v1.13.1
 	go.uber.org/zap v1.26.0
-	golang.org/x/time v0.5.0
 	gorm.io/driver/mysql v1.5.2
-	gorm.io/gen v0.3.24
 	gorm.io/gorm v1.25.5
-	gorm.io/plugin/dbresolver v1.5.0
 )
 
 require (
@@ -43,6 +36,7 @@ require (
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.16.0 // indirect
 	github.com/go-task/slim-sprig v0.0.0-20230315185526-52ccab3ef572 // indirect
+	github.com/goccy/go-json v0.10.2 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/pprof v0.0.0-20231229205709-960ae82b1e42 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
@@ -56,6 +50,7 @@ require (
 	github.com/leodido/go-urn v1.2.4 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
+	github.com/mattn/go-sqlite3 v1.14.16 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
@@ -91,10 +86,7 @@ require (
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/tools v0.16.1 // indirect
 	google.golang.org/protobuf v1.32.0 // indirect
-	gopkg.in/go-playground/assert.v1 v1.2.1 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	gorm.io/datatypes v1.2.0 // indirect
-	gorm.io/hints v1.1.2 // indirect
 )

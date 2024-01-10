@@ -1,9 +1,9 @@
 package test
 
 import (
+	"GinTemplate/pkg/dao"
 	"context"
 	"log"
-	"m-sec/pkg/dao"
 	"testing"
 	"time"
 )

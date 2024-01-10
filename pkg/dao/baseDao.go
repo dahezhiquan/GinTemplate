@@ -1,8 +1,8 @@
 package dao
 
 import (
-	"m-sec/pkg/connections/database"
-	"m-sec/pkg/connections/database/gorms"
+	"GinTemplate/pkg/connections/database"
+	"GinTemplate/pkg/connections/database/gorms"
 )
 
 type baseDao struct {

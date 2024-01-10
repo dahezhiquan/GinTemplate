@@ -1,5 +1,5 @@
 package route
 
 import (
-	_ "m-sec/pkg/route/blog"
+	_ "GinTemplate/pkg/route/blog"
 )

@@ -1,12 +1,12 @@
 package encrypts
 
 import (
+	"GinTemplate/common/errs"
 	"crypto/md5"
 	"crypto/rand"
 	"encoding/binary"
 	"encoding/hex"
 	"fmt"
-	"m-sec/common/errs"
 	"math/big"
 	"sync"
 	"time"
@@ -79,7 +79,7 @@ func (w *Worker) NextID() (int64, *errs.BError) {
 	return id, nil
 }
 
-// ID - Hash 生成方法，M-SEC混合加密
+// ID - Hash 生成方法，GinTemplate混合加密
 
 func LayIDHash() string {
 	node, err := NewWorker()

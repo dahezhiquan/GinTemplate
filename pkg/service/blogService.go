@@ -1,14 +1,14 @@
 package service
 
 import (
+	"GinTemplate/common"
+	"GinTemplate/common/copier"
+	"GinTemplate/pkg/connections/database"
+	"GinTemplate/pkg/connections/database/gorms"
+	"GinTemplate/pkg/connections/database/transaction"
+	"GinTemplate/pkg/domain"
+	"GinTemplate/pkg/dto"
 	"github.com/gin-gonic/gin"
-	"m-sec/common"
-	"m-sec/common/copier"
-	"m-sec/pkg/connections/database"
-	"m-sec/pkg/connections/database/gorms"
-	"m-sec/pkg/connections/database/transaction"
-	"m-sec/pkg/domain"
-	"m-sec/pkg/dto"
 	"net/http"
 )
 

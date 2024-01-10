@@ -1,9 +1,9 @@
 package jwts
 
 import (
+	"GinTemplate/common/errs"
 	"fmt"
 	"github.com/golang-jwt/jwt/v4"
-	"m-sec/common/errs"
 	"time"
 )
 

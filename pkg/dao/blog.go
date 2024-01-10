@@ -1,10 +1,10 @@
 package dao
 
 import (
+	"GinTemplate/pkg/connections/database"
+	"GinTemplate/pkg/connections/database/gorms"
+	"GinTemplate/pkg/model"
 	"context"
-	"m-sec/pkg/connections/database"
-	"m-sec/pkg/connections/database/gorms"
-	"m-sec/pkg/model"
 )
 
 type BlogDao struct {

@@ -1,6 +1,6 @@
 package common
 
-import "m-sec/common/errs"
+import "GinTemplate/common/errs"
 
 type Result struct {
 	Code errs.ErrorCode `json:"code"`

@@ -1,10 +1,10 @@
 package config
 
 import (
+	"GinTemplate/common/logs"
 	"github.com/go-redis/redis/v8"
 	"github.com/spf13/viper"
 	"log"
-	"m-sec/common/logs"
 	"path"
 	"runtime"
 )
